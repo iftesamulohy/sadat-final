@@ -1,0 +1,1362 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="">
+
+  
+<!-- Mirrored from www.themeim.com/demo/blurb/demo/index-third-home.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 26 Nov 2023 22:42:02 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Blurb is Price Comparison, Product Review and Affiliate, Social Business, Multi vendor Store,  HTML Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png' %}">
+    <!-- Place favicon.ico in the root directory -->
+
+
+    <!-- =========================
+        Loding All Stylesheet
+    ============================== -->
+    <link rel="stylesheet" href="{% static 'blurb/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'blurb/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'blurb/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'blurb/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'blurb/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'blurb/css/animate.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'blurb/css/megamenu.css' %}">
+
+    <!-- =========================
+        Loding Main Theme Style
+    ============================== -->
+    <link rel="stylesheet" href="{% static 'blurb/css/style.css' %}">
+
+    <!-- =========================
+    	Header Loding JS Script
+    ============================== -->
+    <script src="{% static 'blurb/js/modernizr.js' %}"></script>
+  </head>
+  <body class="">
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+	{% comment %} <div class="preloader"></div> {% endcomment %}
+
+    <!-- =========================
+        Header Top Section
+    ============================== -->
+	{% include 'blurb/header.html' with categories=categories %}
+   
+
+
+    <!-- =========================
+        Slider Section
+    ============================== -->
+    <section id="main-slider-section">
+    	<div id="main-slider" class="slider-bg2  owl-carousel owl-theme product-review slider-cat">
+			<div class="item d-flex  slider-bg align-items-center">
+				<div class="container-fluid">
+					<div class="row justify-content-end">
+					
+						<div class="slider-text col-sm-6  col-xl-4   col-md-6 order-2 order-sm-1">
+							<h6 class="sub-title">Choose your favourite market</h6>
+							<h1 class="slider-title"><strong class="highlights-text">Compare</strong> Best Prices</h1>
+							<p class="slider-content">Grabe it hurry.</p>
+							<a href="shop-left-sidebar.html" class="btn btn-primary wd-shop-btn slider-btn">
+								Go to store <i class="fa fa-arrow-right" aria-hidden="true"></i>
+							</a>
+						</div>
+						<div class="col-sm-6  col-md-6 col-xl-6 order-1 order-sm-2 slider-img">
+						    <img src="{% static 'blurb/img/slider-img/slider3.png' %}" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+           <div class="item d-flex  slider-bg align-items-center">
+				<div class="container-fluid">
+					<div class="row justify-content-end">
+						<div class="slider-text  col-sm-6 col-xl-4    col-md-6">
+							<h6 class="sub-title">Choose your favourite market</h6>
+							<h1 class="slider-title"><strong class="highlights-text">Compare</strong> Best Prices</h1>
+							<p class="slider-content">Grabe it hurry.</p>
+							<a href="shop-left-sidebar.html" class="btn btn-primary wd-shop-btn slider-btn">
+								Go to store <i class="fa fa-arrow-right" aria-hidden="true"></i>
+							</a>
+						</div>
+						<div class="col-sm-6 col-md-6 col-xl-6  slider-img fadeInDown animated">
+						    <img src="{% static 'blurb/img/slider-img/slider4.png' %}" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+    	</div>
+    </section>
+
+	<!-- =========================
+        Choose Category
+    ============================== -->
+    <section id="choose-category">
+    	<div class="container-fluid custom-width">
+    		<div class="choose-category-area-box">
+	    		<div class="row">
+					<div class="col-md-12 text-center">
+						<h2 class="choose-category-main-title">All Categories</h2>
+					</div>
+					{% for category in categories %}
+					<div class="col-sm-6 col-md-4 col-lg-3 choose-category-box wow fadeIn animated" data-wow-delay="300ms"><!--300ms data plus every time-->
+						<div class="d-flex justify-content-start align-items-center">
+		    				<div class="category-info">
+								<h6 class="choose-category-title">{{category.name}}</h6>
+	    						<div class="choose-category-content">
+									<p>Compare and buy best Branded
+									{{category.name}} from online store</p>
+	    						</div>
+	    						
+		    				</div>
+		    				<div class="category-img">
+		    					<a href="shop-left-sidebar.html"><img class="img-fluid" src="{% static 'blurb/img/categories/categories-img-4.jpg' %}" alt=""></a>
+		    				</div>
+						</div>
+						<span class="wd-border-bottom" style="background: #ff8a80"></span>
+	    			</div>
+					
+					{% endfor %}
+	    			
+	    			
+	    		</div>
+    		</div>
+    	</div>
+    </section>
+
+
+	<!-- =========================
+        Amazon Top Deals
+    ============================== -->
+	<section id="recent-product" class="recent-pro-2">
+    	<div class="container-fluid custom-width">
+    		<div class="row">
+    			<div class="col-md-12 text-center">
+    				<h2 class="recent-product-title">Recent Product Comparison</h2>
+    			</div>
+
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-12 col-md-12 col-lg-4 col-xl-2">
+							<div class="wd-amazon-product">
+								<!-- <h4>Amazon Top Deals</h4> -->
+							</div>
+						</div>
+						<div class="col-md-12 col-lg-8">
+							<ul class="nav nav-tabs wd-amazon-product-tabs " id="myTab-recent" role="tablist">
+							{% for market in markets %}
+								<li class="nav-item">
+									<a class="nav-link{% if forloop.first %} active{% endif %}" id="market-{{ market.name|lower }}-tab" data-toggle="tab" href="#market-{{ market.name|lower }}" role="tab" aria-controls="#market-{{ market.name|lower }}" aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}">{{market.name}}</a>
+								</li>
+							
+							{% endfor %}
+								
+								
+								{% comment %} <li class="nav-item">
+									<a class="nav-link" id="alibaba-tab" data-toggle="tab" href="#alibaba" role="tab" aria-controls="alibaba">Market 5</a>
+								</li> {% endcomment %}
+							</ul>
+						</div>
+					</div>
+					<div class="tab-content" id="myTabContent-recent">
+
+						{% for market, products in products_by_market.items %}
+						<div class="tab-pane fade{% if forloop.first %} show active{% endif %}" id="market-{{ market|lower }}" role="tabpanel" aria-labelledby="market-{{ market|lower }}-tab">
+							<div class="wd-amazon-product tab-inner-title">
+								<h4>{{market}} Top Deals</h4>
+							</div>
+							<div class="row">
+								{% for product in products %}
+								<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+				    				<div class="recent-product-box wow fadeInUp animated" data-wow-delay="0ms">
+				    					<div class="recent-product-img">
+											<div class="product-img">												
+												
+												{% if product.product_image.all %}
+
+													<img src="{{ product.product_image.first.image.url }}" class="img-fluid" alt="recent-product img">
+												{% endif %}
+												<div class="recent-product-overlay text-center">
+													<div class="compare-btn">
+														<button type="button" class="btn btn-primary btn-sm third-home-quick-viwe" data-toggle="modal" data-target=".bd-example-modal-lg-product-1"><i class="fa fa-eye" aria-hidden="true"></i> Quick view</button>
+													</div>
+													<div class='countdown' data-date="2018-12-31"></div>
+												</div>
+											</div>
+
+				    						<span class="badge badge-secondary wd-badge text-uppercase">New</span>
+				    						<div class="recent-product-info">
+					    						<div class="d-flex justify-content-between">
+					    							
+					    							
+					    						</div>
+					    						<div class="recente-product-content">
+													<a href="{% url 'product_detail' product.slug %}">{{product.name}}</a>
+													
+					    						</div>
+				    							<div class="recent-product-meta-link">
+				    								<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i><strong>4.5</strong></a>
+				    								<a href="#">
+				    									<img src="{% static 'blurb/img/product-img/compare.png' %}" alt="">
+				    									<img class="compare-white" src="{% static 'blurb/img/product-img/compare-white.png' %}" alt="">
+				    								</a>
+				    								<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>145</a>
+				    							</div>
+				    						</div>
+				    					</div>
+				    				</div>
+				    			</div>
+								
+								{% endfor %}
+				    			
+				    			
+							</div>
+						</div>
+						{% endfor %}
+
+						
+						
+						{% comment %} <div class="tab-pane fade" id="alibaba" role="tabpanel" aria-labelledby="alibaba-tab">
+							<div class="wd-amazon-product tab-inner-title">
+								<h4>Market 5 Top Deals</h4>
+							</div>
+							<div class="row">
+				    			<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+				    				<div class="recent-product-box wow fadeInUp animated" data-wow-delay="0ms">
+				    					<div class="recent-product-img">
+											<div class="product-img">
+												
+													<img src="{% static 'blurb/img/product-img/th-product-img-5.jpg' %}" class="img-fluid" alt="recent-product img">
+													<div class="recent-product-overlay text-center">
+														<div class="compare-btn">
+															<button type="button" class="btn btn-primary btn-sm third-home-quick-viwe" data-toggle="modal" data-target=".bd-example-modal-lg-product-1"><i class="fa fa-eye" aria-hidden="true"></i> Quick view</button>
+														</div>
+														<div class='countdown' data-date="2018-12-31"></div>
+													</div>
+												
+											</div>
+
+				    						<span class="badge badge-secondary wd-badge text-uppercase">New</span>
+				    						<div class="recent-product-info">
+					    						<div class="d-flex justify-content-between">
+					    							<div class="recent-price">
+					    								$40.30 - $40.30
+					    							</div>
+					    							<div class="recente-product-categories">
+					    								Phones
+					    							</div>
+					    						</div>
+					    						<div class="recente-product-content">
+													<a href="product-details.html">Phone 550 and  Scorebox  review example</a>
+					    						</div>
+				    							<div class="recent-product-meta-link">
+				    								<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i><strong>4.5</strong></a>
+				    								<a href="#">
+				    									<img src="{% static 'blurb/img/product-img/compare.png' %}" alt="">
+				    									<img class="compare-white" src="{% static 'blurb/img/product-img/compare-white.png' %}" alt="">
+				    								</a>
+				    								<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>145</a>
+				    							</div>
+				    						</div>
+				    					</div>
+				    				</div>
+				    			</div>
+				    			<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+				    				<div class="recent-product-box wow fadeInUp animated" data-wow-delay="0ms">
+				    					<div class="recent-product-img">
+											<div class="product-img">
+												
+													<img src="{% static 'blurb/img/product-img/th-product-img-6.jpg' %}" class="img-fluid" alt="recent-product img">
+													<div class="recent-product-overlay text-center">
+														<div class="compare-btn">
+															<button type="button" class="btn btn-primary btn-sm third-home-quick-viwe" data-toggle="modal" data-target=".bd-example-modal-lg-product-1"><i class="fa fa-eye" aria-hidden="true"></i> Quick view</button>
+														</div>
+														<div class='countdown' data-date="2018-12-31"></div>
+													</div>
+												
+											</div>
+				    						<span class="badge badge-secondary wd-badge text-uppercase">New</span>
+				    						<div class="recent-product-info">
+					    						<div class="d-flex justify-content-between">
+					    							<div class="recent-price">
+					    								$40.30 - $40.30
+					    							</div>
+					    							<div class="recente-product-categories">
+					    								Phones
+					    							</div>
+					    						</div>
+					    						<div class="recente-product-content">
+													<a href="product-details.html">Phone 550 and  Scorebox  review example</a>
+					    						</div>
+				    							<div class="recent-product-meta-link">
+				    								<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i><strong>4.5</strong></a>
+				    								<a href="#">
+				    									<img src="{% static 'blurb/img/product-img/compare.png' %}" alt="">
+				    									<img class="compare-white" src="{% static 'blurb/img/product-img/compare-white.png' %}" alt="">
+				    								</a>
+				    								<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>145</a>
+				    							</div>
+				    						</div>
+				    					</div>
+				    				</div>
+				    			</div>
+				    			<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+				    				<div class="recent-product-box wow fadeInUp animated" data-wow-delay="0ms">
+				    					<div class="recent-product-img">
+											<div class="product-img">
+												
+													<img src="{% static 'blurb/img/product-img/th-product-img-7.jpg' %}" class="img-fluid" alt="recent-product img">
+													<div class="recent-product-overlay text-center">
+														<div class="compare-btn">
+															<button type="button" class="btn btn-primary btn-sm third-home-quick-viwe" data-toggle="modal" data-target=".bd-example-modal-lg-product-1"><i class="fa fa-eye" aria-hidden="true"></i> Quick view</button>
+														</div>
+														<div class='countdown' data-date="2018-12-31"></div>
+													</div>
+												
+											</div>
+				    						<span class="badge badge-secondary wd-badge text-uppercase">New</span>
+				    						<div class="recent-product-info">
+					    						<div class="d-flex justify-content-between">
+					    							<div class="recent-price">
+					    								$40.30 - $40.30
+					    							</div>
+					    							<div class="recente-product-categories">
+					    								Phones
+					    							</div>
+					    						</div>
+					    						<div class="recente-product-content">
+													<a href="product-details.html">Phone 550 and  Scorebox  review example</a>
+					    						</div>
+				    							<div class="recent-product-meta-link">
+				    								<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i><strong>4.5</strong></a>
+				    								<a href="#">
+				    									<img src="{% static 'blurb/img/product-img/compare.png' %}" alt="">
+				    									<img class="compare-white" src="{% static 'blurb/img/product-img/compare-white.png' %}" alt="">
+				    								</a>
+				    								<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>145</a>
+				    							</div>
+				    						</div>
+				    					</div>
+				    				</div>
+				    			</div>
+				    			<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+				    				<div class="recent-product-box wow fadeInUp animated" data-wow-delay="0ms">
+				    					<div class="recent-product-img">
+											<div class="product-img">
+												
+													<img src="{% static 'blurb/img/product-img/th-product-img-11.jpg' %}" class="img-fluid" alt="recent-product img">
+													<div class="recent-product-overlay text-center">
+														<div class="compare-btn">
+															<button type="button" class="btn btn-primary btn-sm third-home-quick-viwe" data-toggle="modal" data-target=".bd-example-modal-lg-product-1"><i class="fa fa-eye" aria-hidden="true"></i> Quick view</button>
+														</div>
+														<div class='countdown' data-date="2018-12-31"></div>
+													</div>
+												
+											</div>
+				    						<span class="badge badge-secondary wd-badge text-uppercase">New</span>
+				    						<div class="recent-product-info">
+					    						<div class="d-flex justify-content-between">
+					    							<div class="recent-price">
+					    								$40.30 - $40.30
+					    							</div>
+					    							<div class="recente-product-categories">
+					    								Phones
+					    							</div>
+					    						</div>
+					    						<div class="recente-product-content">
+													<a href="product-details.html">Phone 550 and  Scorebox  review example</a>
+					    						</div>
+				    							<div class="recent-product-meta-link">
+				    								<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i><strong>4.5</strong></a>
+				    								<a href="#">
+				    									<img src="{% static 'blurb/img/product-img/compare.png' %}" alt="">
+				    									<img class="compare-white" src="{% static 'blurb/img/product-img/compare-white.png' %}" alt="">
+				    								</a>
+				    								<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>145</a>
+				    							</div>
+				    						</div>
+				    					</div>
+				    				</div>
+				    			</div>
+				    			<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+				    				<div class="recent-product-box wow fadeInUp animated" data-wow-delay="0ms">
+				    					<div class="recent-product-img">
+											<div class="product-img">
+												
+													<img src="{% static 'blurb/img/product-img/th-product-img-5.jpg' %}" class="img-fluid" alt="recent-product img">
+													<div class="recent-product-overlay text-center">
+														<div class="compare-btn">
+															<button type="button" class="btn btn-primary btn-sm third-home-quick-viwe" data-toggle="modal" data-target=".bd-example-modal-lg-product-1"><i class="fa fa-eye" aria-hidden="true"></i> Quick view</button>
+														</div>
+														<div class='countdown' data-date="2018-12-31"></div>
+													</div>
+												
+											</div>
+				    						<span class="badge badge-secondary wd-badge text-uppercase">New</span>
+				    						<div class="recent-product-info">
+					    						<div class="d-flex justify-content-between">
+					    							<div class="recent-price">
+					    								$40.30 - $40.30
+					    							</div>
+					    							<div class="recente-product-categories">
+					    								Phones
+					    							</div>
+					    						</div>
+					    						<div class="recente-product-content">
+													<a href="product-details.html">Phone 550 and  Scorebox  review example</a>
+					    						</div>
+				    							<div class="recent-product-meta-link">
+				    								<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i><strong>4.5</strong></a>
+				    								<a href="#">
+				    									<img src="{% static 'blurb/img/product-img/compare.png' %}" alt="">
+				    									<img class="compare-white" src="{% static 'blurb/img/product-img/compare-white.png' %}" alt="">
+				    								</a>
+				    								<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>145</a>
+				    							</div>
+				    						</div>
+				    					</div>
+				    				</div>
+				    			</div>
+				    			<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+				    				<div class="recent-product-box wow fadeInUp animated" data-wow-delay="0ms">
+				    					<div class="recent-product-img">
+											<div class="product-img">
+												
+													<img src="{% static 'blurb/img/product-img/th-product-img-6.jpg' %}" class="img-fluid" alt="recent-product img">
+													<div class="recent-product-overlay text-center">
+														<div class="compare-btn">
+															<button type="button" class="btn btn-primary btn-sm third-home-quick-viwe" data-toggle="modal" data-target=".bd-example-modal-lg-product-1"><i class="fa fa-eye" aria-hidden="true"></i> Quick view</button>
+														</div>
+														<div class='countdown' data-date="2018-12-31"></div>
+													</div>
+												
+											</div>
+				    						<span class="badge badge-secondary wd-badge text-uppercase">New</span>
+				    						<div class="recent-product-info">
+					    						<div class="d-flex justify-content-between">
+					    							<div class="recent-price">
+					    								$40.30 - $40.30
+					    							</div>
+					    							<div class="recente-product-categories">
+					    								Phones
+					    							</div>
+					    						</div>
+					    						<div class="recente-product-content">
+													<a href="product-details.html">Phone 550 and  Scorebox  review example</a>
+					    						</div>
+				    							<div class="recent-product-meta-link">
+				    								<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i><strong>4.5</strong></a>
+				    								<a href="#">
+				    									<img src="{% static 'blurb/img/product-img/compare.png' %}" alt="">
+				    									<img class="compare-white" src="{% static 'blurb/img/product-img/compare-white.png' %}" alt="">
+				    								</a>
+				    								<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>145</a>
+				    							</div>
+				    						</div>
+				    					</div>
+				    				</div>
+				    			</div>
+				    			<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+				    				<div class="recent-product-box wow fadeInUp animated" data-wow-delay="0ms">
+				    					<div class="recent-product-img">
+											<div class="product-img">
+												
+													<img src="{% static 'blurb/img/product-img/th-product-img-7.jpg' %}" class="img-fluid" alt="recent-product img">
+													<div class="recent-product-overlay text-center">
+														<div class="compare-btn">
+															<button type="button" class="btn btn-primary btn-sm third-home-quick-viwe" data-toggle="modal" data-target=".bd-example-modal-lg-product-1"><i class="fa fa-eye" aria-hidden="true"></i> Quick view</button>
+														</div>
+														<div class='countdown' data-date="2018-12-31"></div>
+													</div>
+												
+											</div>
+				    						<span class="badge badge-secondary wd-badge text-uppercase">New</span>
+				    						<div class="recent-product-info">
+					    						<div class="d-flex justify-content-between">
+					    							<div class="recent-price">
+					    								$40.30 - $40.30
+					    							</div>
+					    							<div class="recente-product-categories">
+					    								Phones
+					    							</div>
+					    						</div>
+					    						<div class="recente-product-content">
+													<a href="product-details.html">Phone 550 and  Scorebox  review example</a>
+					    						</div>
+				    							<div class="recent-product-meta-link">
+				    								<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i><strong>4.5</strong></a>
+				    								<a href="#">
+				    									<img src="{% static 'blurb/img/product-img/compare.png' %}" alt="">
+				    									<img class="compare-white" src="{% static 'blurb/img/product-img/compare-white.png' %}" alt="">
+				    								</a>
+				    								<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>145</a>
+				    							</div>
+				    						</div>
+				    					</div>
+				    				</div>
+				    			</div>
+				    			<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+				    				<div class="recent-product-box wow fadeInUp animated" data-wow-delay="0ms">
+				    					<div class="recent-product-img">
+											<div class="product-img">
+												
+													<img src="{% static 'blurb/img/product-img/th-product-img-8.jpg' %}" class="img-fluid" alt="recent-product img">
+													<div class="recent-product-overlay text-center">
+														<div class="compare-btn">
+															<button type="button" class="btn btn-primary btn-sm third-home-quick-viwe" data-toggle="modal" data-target=".bd-example-modal-lg-product-1"><i class="fa fa-eye" aria-hidden="true"></i> Quick view</button>
+														</div>
+														<div class='countdown' data-date="2018-12-31"></div>
+													</div>
+												
+											</div>
+				    						<span class="badge badge-secondary wd-badge text-uppercase">New</span>
+				    						<div class="recent-product-info">
+					    						<div class="d-flex justify-content-between">
+					    							<div class="recent-price">
+					    								$40.30 - $40.30
+					    							</div>
+					    							<div class="recente-product-categories">
+					    								Phones
+					    							</div>
+					    						</div>
+					    						<div class="recente-product-content">
+													<a href="product-details.html">Phone 550 and  Scorebox  review example</a>
+					    						</div>
+				    							<div class="recent-product-meta-link">
+				    								<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i><strong>4.5</strong></a>
+				    								<a href="#">
+				    									<img src="{% static 'blurb/img/product-img/compare.png' %}" alt="">
+				    									<img class="compare-white" src="{% static 'blurb/img/product-img/compare-white.png' %}" alt="">
+				    								</a>
+				    								<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>145</a>
+				    							</div>
+				    						</div>
+				    					</div>
+				    				</div>
+				    			</div>
+				    			<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+				    				<div class="recent-product-box wow fadeInUp animated" data-wow-delay="0ms">
+				    					<div class="recent-product-img">
+											<div class="product-img">
+												
+													<img src="{% static 'blurb/img/product-img/th-product-img-9.jpg' %}" class="img-fluid" alt="recent-product img">
+													<div class="recent-product-overlay text-center">
+														<div class="compare-btn">
+															<button type="button" class="btn btn-primary btn-sm third-home-quick-viwe" data-toggle="modal" data-target=".bd-example-modal-lg-product-1"><i class="fa fa-eye" aria-hidden="true"></i> Quick view</button>
+														</div>
+														<div class='countdown' data-date="2018-12-31"></div>
+													</div>
+												
+											</div>
+				    						<span class="badge badge-secondary wd-badge text-uppercase">New</span>
+				    						<div class="recent-product-info">
+					    						<div class="d-flex justify-content-between">
+					    							<div class="recent-price">
+					    								$40.30 - $40.30
+					    							</div>
+					    							<div class="recente-product-categories">
+					    								Phones
+					    							</div>
+					    						</div>
+					    						<div class="recente-product-content">
+													<a href="product-details.html">Phone 550 and  Scorebox  review example</a>
+					    						</div>
+				    							<div class="recent-product-meta-link">
+				    								<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i><strong>4.5</strong></a>
+				    								<a href="#">
+				    									<img src="{% static 'blurb/img/product-img/compare.png' %}" alt="">
+				    									<img class="compare-white" src="{% static 'blurb/img/product-img/compare-white.png' %}" alt="">
+				    								</a>
+				    								<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>145</a>
+				    							</div>
+				    						</div>
+				    					</div>
+				    				</div>
+				    			</div>
+				    			<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+				    				<div class="recent-product-box wow fadeInUp animated" data-wow-delay="0ms">
+				    					<div class="recent-product-img">
+											<div class="product-img">
+												
+													<img src="{% static 'blurb/img/product-img/th-product-img-10.jpg' %}" class="img-fluid" alt="recent-product img">
+													<div class="recent-product-overlay text-center">
+														<div class="compare-btn">
+															<button type="button" class="btn btn-primary btn-sm third-home-quick-viwe" data-toggle="modal" data-target=".bd-example-modal-lg-product-1"><i class="fa fa-eye" aria-hidden="true"></i> Quick view</button>
+														</div>
+														<div class='countdown' data-date="2018-12-31"></div>
+													</div>
+												
+											</div>
+				    						<span class="badge badge-secondary wd-badge text-uppercase">New</span>
+				    						<div class="recent-product-info">
+					    						<div class="d-flex justify-content-between">
+					    							<div class="recent-price">
+					    								$40.30 - $40.30
+					    							</div>
+					    							<div class="recente-product-categories">
+					    								Phones
+					    							</div>
+					    						</div>
+					    						<div class="recente-product-content">
+													<a href="product-details.html">Phone 550 and  Scorebox  review example</a>
+					    						</div>
+				    							<div class="recent-product-meta-link">
+				    								<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i><strong>4.5</strong></a>
+				    								<a href="#">
+				    									<img src="{% static 'blurb/img/product-img/compare.png' %}" alt="">
+				    									<img class="compare-white" src="{% static 'blurb/img/product-img/compare-white.png' %}" alt="">
+				    								</a>
+				    								<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>145</a>
+				    							</div>
+				    						</div>
+				    					</div>
+				    				</div>
+				    			</div>
+				    			<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+				    				<div class="recent-product-box wow fadeInUp animated" data-wow-delay="0ms">
+				    					<div class="recent-product-img">
+											<div class="product-img">
+												
+													<img src="{% static 'blurb/img/product-img/th-product-img-11.jpg' %}" class="img-fluid" alt="recent-product img">
+													<div class="recent-product-overlay text-center">
+														<div class="compare-btn">
+															<button type="button" class="btn btn-primary btn-sm third-home-quick-viwe" data-toggle="modal" data-target=".bd-example-modal-lg-product-1"><i class="fa fa-eye" aria-hidden="true"></i> Quick view</button>
+														</div>
+														<div class='countdown' data-date="2018-12-31"></div>
+													</div>
+												
+											</div>
+				    						<span class="badge badge-secondary wd-badge text-uppercase">New</span>
+				    						<div class="recent-product-info">
+					    						<div class="d-flex justify-content-between">
+					    							<div class="recent-price">
+					    								$40.30 - $40.30
+					    							</div>
+					    							<div class="recente-product-categories">
+					    								Phones
+					    							</div>
+					    						</div>
+					    						<div class="recente-product-content">
+													<a href="product-details.html">Phone 550 and  Scorebox  review example</a>
+					    						</div>
+				    							<div class="recent-product-meta-link">
+				    								<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i><strong>4.5</strong></a>
+				    								<a href="#">
+				    									<img src="{% static 'blurb/img/product-img/compare.png' %}" alt="">
+				    									<img class="compare-white" src="{% static 'blurb/img/product-img/compare-white.png' %}" alt="">
+				    								</a>
+				    								<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>145</a>
+				    							</div>
+				    						</div>
+				    					</div>
+				    				</div>
+				    			</div>
+				    			<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+				    				<div class="recent-product-box wow fadeInUp animated" data-wow-delay="0ms">
+				    					<div class="recent-product-img">
+											<div class="product-img">
+												
+													<img src="{% static 'blurb/img/product-img/th-product-img-1.jpg' %}" class="img-fluid" alt="recent-product img">
+													<div class="recent-product-overlay text-center">
+														<div class="compare-btn">
+															<button type="button" class="btn btn-primary btn-sm third-home-quick-viwe" data-toggle="modal" data-target=".bd-example-modal-lg-product-1"><i class="fa fa-eye" aria-hidden="true"></i> Quick view</button>
+														</div>
+														<div class='countdown' data-date="2018-12-31"></div>
+													</div>
+												
+											</div>
+				    						<span class="badge badge-secondary wd-badge text-uppercase">New</span>
+				    						<div class="recent-product-info">
+					    						<div class="d-flex justify-content-between">
+					    							<div class="recent-price">
+					    								$40.30 - $40.30
+					    							</div>
+					    							<div class="recente-product-categories">
+					    								Phones
+					    							</div>
+					    						</div>
+					    						<div class="recente-product-content">
+													<a href="product-details.html">Phone 550 and  Scorebox  review example</a>
+					    						</div>
+				    							<div class="recent-product-meta-link">
+				    								<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i><strong>4.5</strong></a>
+				    								<a href="#">
+				    									<img src="{% static 'blurb/img/product-img/compare.png' %}" alt="">
+				    									<img class="compare-white" src="{% static 'blurb/img/product-img/compare-white.png' %}" alt="">
+				    								</a>
+				    								<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>145</a>
+				    							</div>
+				    						</div>
+				    					</div>
+				    				</div>
+				    			</div>
+				    			<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+				    				<div class="recent-product-box wow fadeInUp animated" data-wow-delay="0ms">
+				    					<div class="recent-product-img">
+											<div class="product-img">
+												
+													<img src="{% static 'blurb/img/product-img/th-product-img-2.jpg' %}" class="img-fluid" alt="recent-product img">
+													<div class="recent-product-overlay text-center">
+														<div class="compare-btn">
+															<button type="button" class="btn btn-primary btn-sm third-home-quick-viwe" data-toggle="modal" data-target=".bd-example-modal-lg-product-1"><i class="fa fa-eye" aria-hidden="true"></i> Quick view</button>
+														</div>
+														<div class='countdown' data-date="2018-12-31"></div>
+													</div>
+												
+											</div>
+				    						<span class="badge badge-secondary wd-badge text-uppercase">New</span>
+				    						<div class="recent-product-info">
+					    						<div class="d-flex justify-content-between">
+					    							<div class="recent-price">
+					    								$40.30 - $40.30
+					    							</div>
+					    							<div class="recente-product-categories">
+					    								Phones
+					    							</div>
+					    						</div>
+					    						<div class="recente-product-content">
+													<a href="product-details.html">Phone 550 and  Scorebox  review example</a>
+					    						</div>
+				    							<div class="recent-product-meta-link">
+				    								<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i><strong>4.5</strong></a>
+				    								<a href="#">
+				    									<img src="{% static 'blurb/img/product-img/compare.png' %}" alt="">
+				    									<img class="compare-white" src="{% static 'blurb/img/product-img/compare-white.png' %}" alt="">
+				    								</a>
+				    								<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>145</a>
+				    							</div>
+				    						</div>
+				    					</div>
+				    				</div>
+				    			</div>
+				    			<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+				    				<div class="recent-product-box wow fadeInUp animated" data-wow-delay="0ms">
+				    					<div class="recent-product-img">
+											<div class="product-img">
+												
+													<img src="{% static 'blurb/img/product-img/th-product-img-3.jpg' %}" class="img-fluid" alt="recent-product img">
+													<div class="recent-product-overlay text-center">
+														<div class="compare-btn">
+															<button type="button" class="btn btn-primary btn-sm third-home-quick-viwe" data-toggle="modal" data-target=".bd-example-modal-lg-product-1"><i class="fa fa-eye" aria-hidden="true"></i> Quick view</button>
+														</div>
+														<div class='countdown' data-date="2018-12-31"></div>
+													</div>
+												
+											</div>
+				    						<span class="badge badge-secondary wd-badge text-uppercase">New</span>
+				    						<div class="recent-product-info">
+					    						<div class="d-flex justify-content-between">
+					    							<div class="recent-price">
+					    								$40.30 - $40.30
+					    							</div>
+					    							<div class="recente-product-categories">
+					    								Phones
+					    							</div>
+					    						</div>
+					    						<div class="recente-product-content">
+													<a href="product-details.html">Phone 550 and  Scorebox  review example</a>
+					    						</div>
+				    							<div class="recent-product-meta-link">
+				    								<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i><strong>4.5</strong></a>
+				    								<a href="#">
+				    									<img src="{% static 'blurb/img/product-img/compare.png' %}" alt="">
+				    									<img class="compare-white" src="{% static 'blurb/img/product-img/compare-white.png' %}" alt="">
+				    								</a>
+				    								<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>145</a>
+				    							</div>
+				    						</div>
+				    					</div>
+				    				</div>
+				    			</div>
+				    			<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+				    				<div class="recent-product-box wow fadeInUp animated" data-wow-delay="0ms">
+				    					<div class="recent-product-img">
+											<div class="product-img">
+												
+													<img src="{% static 'blurb/img/product-img/th-product-img-4.jpg' %}" class="img-fluid" alt="recent-product img">
+													<div class="recent-product-overlay text-center">
+														<div class="compare-btn">
+															<button type="button" class="btn btn-primary btn-sm third-home-quick-viwe" data-toggle="modal" data-target=".bd-example-modal-lg-product-1"><i class="fa fa-eye" aria-hidden="true"></i> Quick view</button>
+														</div>
+														<div class='countdown' data-date="2018-12-31"></div>
+													</div>
+												
+											</div>
+				    						<span class="badge badge-secondary wd-badge text-uppercase">New</span>
+				    						<div class="recent-product-info">
+					    						<div class="d-flex justify-content-between">
+					    							<div class="recent-price">
+					    								$40.30 - $40.30
+					    							</div>
+					    							<div class="recente-product-categories">
+					    								Phones
+					    							</div>
+					    						</div>
+					    						<div class="recente-product-content">
+													<a href="product-details.html">Phone 550 and  Scorebox  review example</a>
+					    						</div>
+				    							<div class="recent-product-meta-link">
+				    								<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i><strong>4.5</strong></a>
+				    								<a href="#">
+				    									<img src="{% static 'blurb/img/product-img/compare.png' %}" alt="">
+				    									<img class="compare-white" src="{% static 'blurb/img/product-img/compare-white.png' %}" alt="">
+				    								</a>
+				    								<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>145</a>
+				    							</div>
+				    						</div>
+				    					</div>
+				    				</div>
+				    			</div>
+				    			<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+				    				<div class="recent-product-box wow fadeInUp animated" data-wow-delay="0ms">
+				    					<div class="recent-product-img">
+											<div class="product-img">
+												
+													<img src="{% static 'blurb/img/product-img/th-product-img-5.jpg' %}" class="img-fluid" alt="recent-product img">
+													<div class="recent-product-overlay text-center">
+														<div class="compare-btn">
+															<button type="button" class="btn btn-primary btn-sm third-home-quick-viwe" data-toggle="modal" data-target=".bd-example-modal-lg-product-1"><i class="fa fa-eye" aria-hidden="true"></i> Quick view</button>
+														</div>
+														<div class='countdown' data-date="2018-12-31"></div>
+													</div>
+												
+											</div>
+				    						<span class="badge badge-secondary wd-badge text-uppercase">New</span>
+				    						<div class="recent-product-info">
+					    						<div class="d-flex justify-content-between">
+					    							<div class="recent-price">
+					    								$40.30 - $40.30
+					    							</div>
+					    							<div class="recente-product-categories">
+					    								Phones
+					    							</div>
+					    						</div>
+					    						<div class="recente-product-content">
+													<a href="product-details.html">Phone 550 and  Scorebox  review example</a>
+					    						</div>
+				    							<div class="recent-product-meta-link">
+				    								<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i><strong>4.5</strong></a>
+				    								<a href="#">
+				    									<img src="{% static 'blurb/img/product-img/compare.png' %}" alt="">
+				    									<img class="compare-white" src="{% static 'blurb/img/product-img/compare-white.png' %}" alt="">
+				    								</a>
+				    								<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>145</a>
+				    							</div>
+				    						</div>
+				    					</div>
+				    				</div>
+				    			</div>
+				    			<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+				    				<div class="recent-product-box wow fadeInUp animated" data-wow-delay="0ms">
+				    					<div class="recent-product-img">
+											<div class="product-img">
+												
+													<img src="{% static 'blurb/img/product-img/th-product-img-6.jpg' %}" class="img-fluid" alt="recent-product img">
+													<div class="recent-product-overlay text-center">
+														<div class="compare-btn">
+															<button type="button" class="btn btn-primary btn-sm third-home-quick-viwe" data-toggle="modal" data-target=".bd-example-modal-lg-product-1"><i class="fa fa-eye" aria-hidden="true"></i> Quick view</button>
+														</div>
+														<div class='countdown' data-date="2018-12-31"></div>
+													</div>
+												
+											</div>
+				    						<span class="badge badge-secondary wd-badge text-uppercase">New</span>
+				    						<div class="recent-product-info">
+					    						<div class="d-flex justify-content-between">
+					    							<div class="recent-price">
+					    								$40.30 - $40.30
+					    							</div>
+					    							<div class="recente-product-categories">
+					    								Phones
+					    							</div>
+					    						</div>
+					    						<div class="recente-product-content">
+													<a href="product-details.html">Phone 550 and  Scorebox  review example</a>
+					    						</div>
+				    							<div class="recent-product-meta-link">
+				    								<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i><strong>4.5</strong></a>
+				    								<a href="#">
+				    									<img src="{% static 'blurb/img/product-img/compare.png' %}" alt="">
+				    									<img class="compare-white" src="{% static 'blurb/img/product-img/compare-white.png' %}" alt="">
+				    								</a>
+				    								<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>145</a>
+				    							</div>
+				    						</div>
+				    					</div>
+				    				</div>
+				    			</div>
+				    			<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+				    				<div class="recent-product-box wow fadeInUp animated" data-wow-delay="0ms">
+				    					<div class="recent-product-img">
+											<div class="product-img">
+												
+													<img src="{% static 'blurb/img/product-img/th-product-img-7.jpg' %}" class="img-fluid" alt="recent-product img">
+													<div class="recent-product-overlay text-center">
+														<div class="compare-btn">
+															<button type="button" class="btn btn-primary btn-sm third-home-quick-viwe" data-toggle="modal" data-target=".bd-example-modal-lg-product-1"><i class="fa fa-eye" aria-hidden="true"></i> Quick view</button>
+														</div>
+														<div class='countdown' data-date="2018-12-31"></div>
+													</div>
+												
+											</div>
+				    						<span class="badge badge-secondary wd-badge text-uppercase">New</span>
+				    						<div class="recent-product-info">
+					    						<div class="d-flex justify-content-between">
+					    							<div class="recent-price">
+					    								$40.30 - $40.30
+					    							</div>
+					    							<div class="recente-product-categories">
+					    								Phones
+					    							</div>
+					    						</div>
+					    						<div class="recente-product-content">
+													<a href="product-details.html">Phone 550 and  Scorebox  review example</a>
+					    						</div>
+				    							<div class="recent-product-meta-link">
+				    								<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i><strong>4.5</strong></a>
+				    								<a href="#">
+				    									<img src="{% static 'blurb/img/product-img/compare.png' %}" alt="">
+				    									<img class="compare-white" src="{% static 'blurb/img/product-img/compare-white.png' %}" alt="">
+				    								</a>
+				    								<a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>145</a>
+				    							</div>
+				    						</div>
+				    					</div>
+				    				</div>
+				    			</div>
+							</div>
+						</div> {% endcomment %}
+					</div>
+				</div>
+    		</div>
+    	</div>
+    </section>
+	<div class="product-view-modal modal fade bd-example-modal-lg-product-1" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+
+		    <!-- ====================================
+		        Product Details Gallery Section
+		    ========================================= -->
+			<div class="row">
+				<div class="product-gallery col-12 col-md-12 col-lg-6">
+				    <!-- ====================================
+				        Single Product Gallery Section
+				    ========================================= -->
+				    <div class="row">
+						<div class="col-md-12 product-slier-details">
+							<div id="product-view-model" class="product-view owl-carousel owl-theme">
+							    <div class="item">
+							    	<img src="{% static 'blurb/img/product-img/product-view-img-1.jpg' %}" class="img-fluid" alt="Product Img">
+							    </div>
+							    <div class="item">
+							    	<img src="{% static 'blurb/img/product-img/product-view-img-2.jpg' %}" class="img-fluid" alt="Product Img">
+							    </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 col-12 col-md-12 col-lg-6">
+					<div class="product-details-gallery">
+						<div class="list-group">
+							<h4 class="list-group-item-heading product-title">
+								Vigo SP111-31N-P2GH Spin 1
+							</h4>
+							<div class="media">
+								<div class="media-left media-middle">
+									<div class="rating">
+										<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+									</div>
+								</div>
+								<div class="media-body">
+									<p>3.7/5 <span class="product-ratings-text"> -1747 Ratings</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="list-group content-list">
+							<p><i class="fa fa-dot-circle-o" aria-hidden="true"></i> 100% Original product</p>
+							<p><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Manufacturer Warranty</p>
+						</div>
+					</div>
+					<div class="product-store row">
+						<div class="col-12 product-store-box">
+							<div class="row">
+								<div class="col-3 p0 store-border-img">
+									<img src="{% static 'blurb/img/product-store/product-store-img1.jpg' %}" class="figure-img img-fluid" alt="Product Img">
+								</div>
+								<div class="col-5 store-border-price text-center">
+									<div class="price">
+										<p>$234</p>
+									</div>
+								</div>
+								<div class="col-4 store-border-button">
+									<a href="#" class="btn btn-primary wd-shop-btn pull-right">
+										Buy it now
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 product-store-box">
+							<div class="row">
+								<div class="col-3 p0 store-border-img">
+									<img src="{% static 'blurb/img/product-store/product-store-img2.jpg' %}" class="figure-img img-fluid" alt="Product Img">
+								</div>
+								<div class="col-5 store-border-price text-center">
+									<div class="price">
+										<p>$535</p>
+									</div>
+								</div>
+								<div class="col-4 store-border-button">
+									<a href="#" class="btn btn-primary wd-shop-btn pull-right red-bg">
+										Buy it now
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 product-store-box">
+							<div class="row">
+								<div class="col-3 p0 store-border-img">
+									<img src="{% static 'blurb/img/product-store/product-store-img3.jpg' %}" class="figure-img img-fluid" alt="Product Img">
+								</div>
+								<div class="col-5 store-border-price">
+									<span class="badge badge-secondary wd-badge text-uppercase">Best</span>
+									<div class="price text-center">
+										<p>$198</p>
+									</div>
+								</div>
+								<div class="col-4 store-border-button">
+									<a href="#" class="btn btn-primary wd-shop-btn pull-right orange-bg">
+										Buy it now
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 product-store-box">
+							<div class="row">
+								<div class="col-3 p0 store-border-img">
+									<img src="{% static 'blurb/img/product-store/product-store-img4.jpg' %}" class="figure-img img-fluid" alt="Product Img">
+								</div>
+								<div class="col-5 store-border-price text-center">
+									<div class="price">
+										<p>$634</p>
+									</div>
+								</div>
+								<div class="col-4 store-border-button">
+									<a href="#" class="btn btn-primary wd-shop-btn pull-right green-bg">
+										Buy it now
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 product-store-box">
+							<div class="row">
+								<div class="col-3 p0 store-border-img">
+									<img src="{% static 'blurb/img/product-store/product-store-img5.jpg' %}" class="figure-img img-fluid" alt="Product Img">
+								</div>
+								<div class="col-5 store-border-price text-center">
+									<div class="price">
+										<p>$234</p>
+									</div>
+								</div>
+								<div class="col-4 store-border-button">
+									<a href="#" class="btn btn-primary wd-shop-btn pull-right blue-bg">
+										Buy it now
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+    <!-- =========================
+        Review Section
+    ============================== -->
+    <section id="review" class="bg-image">
+    	<div class="container-fluid custom-width">
+    		<div class="row">
+    			<div class="col-md-12">
+					<h2 class="review-title">
+						Check <span>REVIEW</span> With <span>BLURB</span> Theme to make <br>
+						Best <span>Revenue.</span>
+					</h2>
+    			</div>
+    			<div class="col-12 col-md-12 col-lg-7 col-xl-12">
+					<div class="test-slider-up owl-carousel owl-theme row wow fadeInRight animated" data-wow-delay="300ms">
+					    <div class="item">
+							<ul class="list-unstyled review-list">
+							  <li class="media">
+								<div class="media">
+									<img class="d-flex mr-3" src="{% static 'blurb/img/review/th-review-author-img-1.png' %}" alt="Generic placeholder image">
+									<div class="media-body">
+										<div class="rating">
+											<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+										</div>
+										<p class="review-content">
+											<i class="fa fa-quote-left" aria-hidden="true"></i>Great theme, I had to build a site in a hurry.<i class="fa fa-quote-right" aria-hidden="true"></i>
+										</p>
+									</div>
+								</div>
+							  </li>
+							  <li class="media">
+								<div class="media">
+									<img class="d-flex mr-3" src="{% static 'blurb/img/review/th-review-author-img-2.png' %}" alt="Generic placeholder image">
+									<div class="media-body">
+										<div class="rating">
+											<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+										</div>
+										<p class="review-content">
+											<i class="fa fa-quote-left" aria-hidden="true"></i>Great theme, I had to build a site in a hurry.<i class="fa fa-quote-right" aria-hidden="true"></i>
+										</p>
+									</div>
+								</div>
+							  </li>
+							  <li class="media">
+								<div class="media">
+									<img class="d-flex mr-3" src="{% static 'blurb/img/review/th-review-author-img-3.png' %}" alt="Generic placeholder image">
+									<div class="media-body">
+										<div class="rating">
+											<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+										</div>
+										<p class="review-content">
+											<i class="fa fa-quote-left" aria-hidden="true"></i>Great theme, I had to build a site in a hurry.<i class="fa fa-quote-right" aria-hidden="true"></i>
+										</p>
+									</div>
+								</div>
+							  </li>
+							  <li class="media">
+								<div class="media">
+									<img class="d-flex mr-3" src="{% static 'blurb/img/review/th-review-author-img-4.png' %}" alt="Generic placeholder image">
+									<div class="media-body">
+										<div class="rating">
+											<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+										</div>
+										<p class="review-content">
+											<i class="fa fa-quote-left" aria-hidden="true"></i>Great theme, I had to build a site in a hurry.<i class="fa fa-quote-right" aria-hidden="true"></i>
+										</p>
+									</div>
+								</div>
+							  </li>
+							</ul>
+					    </div>
+					    <div class="item">
+							<ul class="list-unstyled review-list">
+							  <li class="media">
+								<div class="media">
+									<img class="d-flex mr-3" src="{% static 'blurb/img/review/th-review-author-img-1.png' %}" alt="Generic placeholder image">
+									<div class="media-body">
+										<div class="rating">
+											<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+										</div>
+										<p class="review-content">
+											<i class="fa fa-quote-left" aria-hidden="true"></i>Great theme, I had to build a site in a hurry.<i class="fa fa-quote-right" aria-hidden="true"></i>
+										</p>
+									</div>
+								</div>
+							  </li>
+							  <li class="media">
+								<div class="media">
+									<img class="d-flex mr-3" src="{% static 'blurb/img/review/th-review-author-img-2.png' %}" alt="Generic placeholder image">
+									<div class="media-body">
+										<div class="rating">
+											<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+										</div>
+										<p class="review-content">
+											<i class="fa fa-quote-left" aria-hidden="true"></i>Great theme, I had to build a site in a hurry.<i class="fa fa-quote-right" aria-hidden="true"></i>
+										</p>
+									</div>
+								</div>
+							  </li>
+							  <li class="media">
+								<div class="media">
+									<img class="d-flex mr-3" src="{% static 'blurb/img/review/th-review-author-img-3.png' %}" alt="Generic placeholder image">
+									<div class="media-body">
+										<div class="rating">
+											<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+										</div>
+										<p class="review-content">
+											<i class="fa fa-quote-left" aria-hidden="true"></i>Great theme, I had to build a site in a hurry.<i class="fa fa-quote-right" aria-hidden="true"></i>
+										</p>
+									</div>
+								</div>
+							  </li>
+							  <li class="media">
+								<div class="media">
+									<img class="d-flex mr-3" src="{% static 'blurb/img/review/th-review-author-img-4.png' %}" alt="Generic placeholder image">
+									<div class="media-body">
+										<div class="rating">
+											<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+										</div>
+										<p class="review-content">
+											<i class="fa fa-quote-left" aria-hidden="true"></i>Great theme, I had to build a site in a hurry.<i class="fa fa-quote-right" aria-hidden="true"></i>
+										</p>
+									</div>
+								</div>
+							  </li>
+							</ul>
+					    </div>
+					</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+	<!-- =========================
+        Best Rated Items
+    ============================== -->
+    <section id="best-rated">
+    	<div class="container-fluid custom-width">
+    		<div class="row">
+    			<div class="col-md-12">
+    				<div class="text-left best-rated-title">
+    					<h4>Best Rated Items</h4>
+    				</div>
+    				<div class="col-md-12 wow fadeInUp animated" data-wow-delay="300ms">
+    				<div class="row">
+					{% for market, products in products_by_market.items %}
+						{% for product in products %}
+						<div class="col-12 col-sm-6 col-md-6 col-xl-3 p0">
+	    					<div class="bast-rated-box">
+								<div class="media">
+									<a href="product-details.html">
+										{% if product.product_image.all %}
+											<img class="d-flex mr-3" src="{{ product.product_image.first.image.url }}" alt="Generic placeholder image" height="80px">
+										
+										
+										{% endif %}
+										
+									</a>
+									<div class="media-body">
+										<strong class="price">{{product.name}}</strong>
+										<p class="rated-content">{{product.category.name}}</p>
+										<div class="rating">
+											<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+										</div>
+									</div>
+								</div>
+	    					</div>
+	    				</div>
+						
+						{% endfor %}
+					
+					
+					{% endfor %}
+	    				
+	    				
+    				</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+	<!-- =========================
+        Weekly Top News
+    ============================== -->
+   
+
+    <!-- =========================
+        Counter Section
+    ============================== -->
+    <section id="wd-counter" class=" wow bounceIn animated" data-wow-delay="50ms">
+    	<div class="container-fluid custom-width text-center">
+    		<div class="row">
+			{% for market, products in products_by_market.items %}
+				<div class="col-6 col-sm-6 col-md-4 col-lg-2 wd-counter-box">
+    				<h3>{{market}}</h3>
+    				<p><span class="counter">{{ products|length }}</span>+ Products</p>
+    			</div>
+			
+			{% endfor %}
+    			
+    			
+    		</div>
+    	</div>
+    </section>
+
+    <!-- =========================
+        Footer Section
+    ============================== -->
+    {% include 'blurb/footer.html' %}
+
+
+
+    <!-- =========================
+    	Main Loding JS Script
+    ============================== -->
+    <script src="{% static 'blurb/js/jquery.min.js' %}"></script>
+    <script src="{% static 'blurb/js/jquery-ui.js' %}"></script>
+    <script src="{% static 'blurb/js/popper.js' %}"></script>
+    <script src="{% static 'blurb/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'blurb/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'blurb/js/jquery.nav.js' %}"></script>
+    <!-- <script src="js/jquery.nicescroll.js' %}"></script> -->
+    <script src="{% static 'blurb/js/jquery.rateyo.js' %}"></script>
+    <script src="{% static 'blurb/js/jquery.scrollUp.min.js' %}"></script>
+    <script src="{% static 'blurb/js/jquery.sticky.js' %}"></script>
+    <script src="{% static 'blurb/js/mobile.js' %}"></script>
+    <script src="{% static 'blurb/js/lightslider.min.js' %}"></script>
+    <script src="{% static 'blurb/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'blurb/js/circle-progress.min.js' %}"></script>
+    <script src="{% static 'blurb/js/waypoints.min.js' %}"></script>
+    
+    <script src="{% static 'blurb/js/simplePlayer.js' %}"></script>
+    
+    <script src="{% static 'blurb/js/main.js' %}"></script>
+  </body>
+
+
+</html>

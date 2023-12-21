@@ -1,0 +1,848 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="">
+  
+<!-- Mirrored from www.themeim.com/demo/blurb/demo/wishlist.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 26 Nov 2023 22:43:46 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Blurb is Price Comparison, Product Review and Affiliate, Social Business, Multi vendor Store,  HTML Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+
+    <!-- =========================
+        Loding All Stylesheet
+    ============================== -->
+    <link rel="stylesheet" href="{% static 'blurb/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'blurb/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'blurb/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'blurb/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'blurb/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'blurb/css/animate.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'blurb/css/megamenu.css' %}">
+
+    <!-- =========================
+        Loding Main Theme Style
+    ============================== -->
+    <link rel="stylesheet" href="{% static 'blurb/css/style.css' %}">
+
+    <!-- =========================
+    	Header Loding JS Script
+    ============================== -->
+    <script src="{% static 'blurb/js/modernizr.js' %}"></script>
+  </head>
+  <body class="">
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+		<div class="preloader"></div>
+
+    <!-- =========================
+        Header Top Section
+    ============================== -->
+   {% include 'blurb/header.html' %}
+
+
+    <!-- =========================
+        Slider Section
+    ============================== -->
+    <section class="wishlist-slider-section  wd-slider-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="text-center">
+						<h1 class="wishlist-slider-title">Wishlist</h1>
+	                    <div class="page-location pt-0">
+	                        <ul>
+	                            <li><a href="#">
+	                                Home <span class="divider">/</span>
+	                            </a></li>
+	                            <li><a class="page-location-active" href="#">
+	                                <span class="active-color">Wishlist</span>
+	                                <span class="divider">/</span>
+	                            </a></li>
+	                        </ul>
+	                    </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+    <!-- =========================
+        Product Details Section
+    ============================== -->
+    <section class="product-details wishlist-table">
+    	<div class="container">
+			<div class="row compare-products">
+				<div class="col-12 p0">
+			        <div id="no-more-tables">
+			            <table class="col-md-12 p0 table table-responsive">
+						  <thead>
+						    <tr class="wishlist-table-title">
+						      <th class="text-center">Remove</th>
+						      <th class="text-center">Image</th>
+						      <th class="text-center">Product name</th>
+						      <th class="text-center">Ratings</th>
+						      <th class="text-center">Unit price</th>
+						      <th class="text-center">Availability</th>
+						      <th class="text-center">Availability</th>
+						    </tr>
+						  </thead>
+			        		<tbody>
+			        			<tr>
+			        				<td class="text-center remove-icon">
+			        					<div class="vertical-center">
+			        						<a href="#">
+				        						<div class="close-icon">
+				        							<i class="fa fa-times" aria-hidden="true"></i>
+				        						</div>
+			        						</a>
+			        					</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<img  src="{% static 'blurb/img/product-img/wishlist-img-1.jpg' %}" class="figure-img img-fluid" alt="product-img">
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<p>Sanon 600D camera</p>
+				        				</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<div class="wishlist-ratings">
+				        						<strong>4.5</strong>
+					        				</div>
+											<div class="rating">
+												<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+											</div>
+										</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<div class="wishlist-price">
+			        							<p>$ 20.00</p>
+			        						</div>
+			        					</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<div class="green-color"><i class="fa fa-check" aria-hidden="true"></i> In stock</div>
+			        					</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+											<a href="#!" class="btn btn-primary select-market-btn">
+											    Go to store <i class="fa fa-arrow-right" aria-hidden="true"></i>
+											</a>
+										</div>
+			        				</td>
+			        			</tr>
+			        			<tr>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<a href="#">
+				        						<div class="close-icon">
+				        							<i class="fa fa-times" aria-hidden="true"></i>
+				        						</div>
+			        						</a>
+			        					</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<img  src="{% static 'blurb/img/product-img/wishlist-img-2.jpg' %}" class="figure-img img-fluid" alt="product-img">
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<p>Sanon 600D camera</p>
+				        				</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<div class="wishlist-ratings">
+				        						<strong>3.5</strong>
+					        				</div>
+											<div class="rating">
+												<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+											</div>
+										</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<div class="wishlist-price">
+			        							<p>$ 20.00</p>
+			        						</div>
+			        					</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<div class="red-color"><i class="fa fa-times" aria-hidden="true"></i> Out of stock</div>
+			        					</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+											<a href="#!" class="btn btn-primary select-market-btn">
+											    Go to store <i class="fa fa-arrow-right" aria-hidden="true"></i>
+											</a>
+										</div>
+			        				</td>
+			        			</tr>
+			        			<tr>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<a href="#">
+				        						<div class="close-icon">
+				        							<i class="fa fa-times" aria-hidden="true"></i>
+				        						</div>
+			        						</a>
+			        					</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<img  src="{% static 'blurb/img/product-img/wishlist-img-3.jpg' %}" class="figure-img img-fluid" alt="product-img">
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<p>Sanon 600D camera</p>
+				        				</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<div class="wishlist-ratings">
+				        						<strong>2.5</strong>
+					        				</div>
+											<div class="rating">
+												<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+											</div>
+										</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<div class="wishlist-price">
+			        							<p>$ 20.00</p>
+			        						</div>
+			        					</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<div class="green-color"><i class="fa fa-check" aria-hidden="true"></i> In stock</div>
+			        					</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+											<a href="#!" class="btn btn-primary select-market-btn">
+											    Go to store <i class="fa fa-arrow-right" aria-hidden="true"></i>
+											</a>
+										</div>
+			        				</td>
+			        			</tr>
+			        			<tr>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<a href="#">
+				        						<div class="close-icon">
+				        							<i class="fa fa-times" aria-hidden="true"></i>
+				        						</div>
+			        						</a>
+			        					</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<img  src="{% static 'blurb/img/product-img/wishlist-img-4.jpg' %}" class="figure-img img-fluid" alt="product-img">
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<p>Sanon 600D camera</p>
+				        				</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<div class="wishlist-ratings">
+				        						<strong>1.0</strong>
+					        				</div>
+											<div class="rating">
+												<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+											</div>
+										</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<div class="wishlist-price">
+			        							<p>$ 20.00</p>
+			        						</div>
+			        					</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<div class="red-color"><i class="fa fa-times" aria-hidden="true"></i> Out of stock</div>
+			        					</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+											<a href="#!" class="btn btn-primary select-market-btn">
+											    Go to store <i class="fa fa-arrow-right" aria-hidden="true"></i>
+											</a>
+										</div>
+			        				</td>
+			        			</tr>
+			        		</tbody>
+			        	</table>
+			        </div>
+				</div>
+			</div>
+
+
+			<div class="row wishlist-compare-products">
+				<div class="col-12 p0">
+			        <div id="no-more-tables1">
+			            <table class="col-md-12 p0 table table-responsive">
+						  <thead class="display-none-wishlist-title">
+						    <tr class="wishlist-table-title">
+						      <th class="text-center">Remove</th>
+						      <th class="text-center">Image</th>
+						      <th class="text-center">Product name</th>
+						      <th class="text-center">Ratings</th>
+						      <th class="text-center">Unit price</th>
+						      <th class="text-center">Availability</th>
+						      <th class="text-center">Availability</th>
+						    </tr>
+						  </thead>
+			        		<tbody>
+			        			<tr>
+			        				<td class="text-center remove-icon">
+			        					<div class="vertical-center">
+			        						<a href="#">
+				        						<div class="close-icon">
+				        							<i class="fa fa-times" aria-hidden="true"></i>
+				        						</div>
+			        						</a>
+			        					</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<img  src="{% static 'blurb/img/product-img/wishlist-img-1.jpg' %}" class="figure-img img-fluid" alt="product-img">
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<p>Sanon 600D camera</p>
+				        				</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<div class="wishlist-ratings">
+				        						<strong>4.5</strong>
+					        				</div>
+											<div class="rating">
+												<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+											</div>
+										</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<div class="wishlist-price">
+			        							<p>$ 20.00</p>
+			        						</div>
+			        					</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<div class="green-color"><i class="fa fa-check" aria-hidden="true"></i> In stock</div>
+			        					</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+											<a href="#!" class="btn btn-primary select-market-btn">
+											    Go to store <i class="fa fa-arrow-right" aria-hidden="true"></i>
+											</a>
+										</div>
+			        				</td>
+			        			</tr>
+			        			<tr>
+			        				<td class="text-center remove-icon">
+			        					<div class="vertical-center">
+			        						<a href="#">
+				        						<div class="close-icon">
+				        							<i class="fa fa-times" aria-hidden="true"></i>
+				        						</div>
+			        						</a>
+			        					</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<img  src="{% static 'blurb/img/product-img/wishlist-img-2.jpg' %}" class="figure-img img-fluid" alt="product-img">
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<p>Sanon 600D camera</p>
+				        				</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<div class="wishlist-ratings">
+				        						<strong>3.5</strong>
+					        				</div>
+											<div class="rating">
+												<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+											</div>
+										</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<div class="wishlist-price">
+			        							<p>$ 20.00</p>
+			        						</div>
+			        					</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<div class="red-color"><i class="fa fa-times" aria-hidden="true"></i> Out of stock</div>
+			        					</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+											<a href="#!" class="btn btn-primary select-market-btn">
+											    Go to store <i class="fa fa-arrow-right" aria-hidden="true"></i>
+											</a>
+										</div>
+			        				</td>
+			        			</tr>
+			        			<tr>
+			        				<td class="text-center remove-icon">
+			        					<div class="vertical-center">
+			        						<a href="#">
+				        						<div class="close-icon">
+				        							<i class="fa fa-times" aria-hidden="true"></i>
+				        						</div>
+			        						</a>
+			        					</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<img  src="{% static 'blurb/img/product-img/wishlist-img-3.jpg' %}" class="figure-img img-fluid" alt="product-img">
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<p>Sanon 600D camera</p>
+				        				</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<div class="wishlist-ratings">
+				        						<strong>2.5</strong>
+					        				</div>
+											<div class="rating">
+												<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+											</div>
+										</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<div class="wishlist-price">
+			        							<p>$ 20.00</p>
+			        						</div>
+			        					</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<div class="green-color"><i class="fa fa-check" aria-hidden="true"></i> In stock</div>
+			        					</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+											<a href="#!" class="btn btn-primary select-market-btn">
+											    Go to store <i class="fa fa-arrow-right" aria-hidden="true"></i>
+											</a>
+										</div>
+			        				</td>
+			        			</tr>
+			        			<tr>
+			        				<td class="text-center remove-icon">
+			        					<div class="vertical-center">
+			        						<a href="#">
+				        						<div class="close-icon">
+				        							<i class="fa fa-times" aria-hidden="true"></i>
+				        						</div>
+			        						</a>
+			        					</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<img  src="{% static 'blurb/img/product-img/wishlist-img-4.jpg' %}" class="figure-img img-fluid" alt="product-img">
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<p>Sanon 600D camera</p>
+				        				</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<div class="wishlist-ratings">
+				        						<strong>1.0</strong>
+					        				</div>
+											<div class="rating">
+												<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+												<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+											</div>
+										</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<div class="wishlist-price">
+			        							<p>$ 20.00</p>
+			        						</div>
+			        					</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+			        						<div class="red-color"><i class="fa fa-times" aria-hidden="true"></i> Out of stock</div>
+			        					</div>
+			        				</td>
+			        				<td class="text-center">
+			        					<div class="vertical-center">
+											<a href="#!" class="btn btn-primary select-market-btn">
+											    Go to store <i class="fa fa-arrow-right" aria-hidden="true"></i>
+											</a>
+										</div>
+			        				</td>
+			        			</tr>
+			        		</tbody>
+			        	</table>
+			        </div>
+				</div>
+			</div>
+
+
+			<div class="row related-product">
+				<h4 class="related-product-title">Related Items</h4>
+				<div id="related-product" class="owl-carousel owl-theme">
+	    			<div class="col-12 col-md-12">
+						<figure class="figure product-box">
+							<div class="product-box-img">
+								<img  src="{% static 'blurb/img/product-img/product-img-1.jpg' %}" class="figure-img img-fluid" alt="Product Img">
+							</div>
+							<div class="quick-view-btn">
+								<div class="compare-btn">
+									<a class="btn btn-primary btn-sm" href="#"><i class="fa fa-eye" aria-hidden="true"></i> Quick view</a>
+								</div>
+							</div>
+							<figcaption class="figure-caption text-center">
+								<span class="badge badge-secondary wd-badge text-uppercase">New</span>
+								<div class="wishlist">
+									<i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div class="price-start">
+									<p>Price start from   <strong class="active-color"><u>$80.00</u> - <u>$75.00</u></strong></p>
+								</div>
+								<div class="content-excerpt">
+									<p>Cras in nunc non ipsum duo cursus ultrices est</p>
+								</div>
+								<div class="rating">
+									<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-star active-color" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+								</div>
+								<div class="compare-btn">
+									<a class="btn btn-primary btn-sm" href="#"><i class="fa fa-exchange" aria-hidden="true"></i> Add to compare</a>
+								</div>
+							</figcaption>
+						</figure>
+	    			</div>
+	    			<div class="col-12 col-md-12">
+						<figure class="figure product-box">
+							<div class="product-box-img">
+								<img  src="{% static 'blurb/img/product-img/product-img-2.jpg' %}" class="figure-img img-fluid" alt="Product Img">
+							</div>
+							<div class="quick-view-btn">
+								<div class="compare-btn">
+									<a class="btn btn-primary btn-sm" href="#"><i class="fa fa-eye" aria-hidden="true"></i> Quick view</a>
+								</div>
+							</div>
+							<figcaption class="figure-caption text-center">
+								<span class="badge badge-secondary wd-badge text-uppercase">New</span>
+								<div class="wishlist">
+									<i class="fa fa-heart active-wishlist" aria-hidden="true"></i>
+								</div>
+								<div class="price-start">
+									<p>Price start from   <strong class="active-color"><u>$80.00</u> - <u>$75.00</u></strong></p>
+								</div>
+								<div class="content-excerpt">
+									<p>Cras in nunc non ipsum duo cursus ultrices est</p>
+								</div>
+								<div class="rating">
+									<a class="active-color" href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+									<a class="active-color" href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+									<a class="active-color" href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+								</div>
+								<div class="compare-btn">
+									<a class="btn btn-primary btn-sm" href="#"><i class="fa fa-exchange" aria-hidden="true"></i> Add to compare</a>
+								</div>
+							</figcaption>
+						</figure>
+	    			</div>
+	    			<div class="col-12 col-md-12">
+						<figure class="figure product-box">
+							<div class="product-box-img">
+								<img  src="{% static 'blurb/img/product-img/product-img-3.jpg' %}" class="figure-img img-fluid" alt="Product Img">
+							</div>
+							<div class="quick-view-btn">
+								<div class="compare-btn">
+									<a class="btn btn-primary btn-sm" href="#"><i class="fa fa-eye" aria-hidden="true"></i> Quick view</a>
+								</div>
+							</div>
+							<figcaption class="figure-caption text-center">
+								<span class="badge badge-secondary wd-badge featured-bg-color text-uppercase">Featured</span>
+								<div class="wishlist">
+									<i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div class="price-start">
+									<p>Price start from   <strong class="active-color"><u>$80.00</u> - <u>$75.00</u></strong></p>
+								</div>
+								<div class="content-excerpt">
+									<p>Cras in nunc non ipsum duo cursus ultrices est</p>
+								</div>
+								<div class="rating">
+									<a class="active-color" href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+									<a class="active-color" href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+									<a class="active-color" href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+								</div>
+								<div class="compare-btn">
+									<a class="btn btn-primary btn-sm" href="#"><i class="fa fa-exchange" aria-hidden="true"></i> Add to compare</a>
+								</div>
+							</figcaption>
+						</figure>
+	    			</div>
+	    			<div class="col-12 col-md-12">
+						<figure class="figure product-box">
+							<div class="product-box-img">
+								<img  src="{% static 'blurb/img/product-img/product-img-4.jpg' %}" class="figure-img img-fluid" alt="Product Img">
+							</div>
+							<div class="quick-view-btn">
+								<div class="compare-btn">
+									<a class="btn btn-primary btn-sm" href="#"><i class="fa fa-eye" aria-hidden="true"></i> Quick view</a>
+								</div>
+							</div>
+							<figcaption class="figure-caption text-center">
+								<span class="badge badge-secondary wd-badge text-uppercase">New</span>
+								<div class="wishlist">
+									<i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div class="price-start">
+									<p>Price start from   <strong class="active-color"><u>$80.00</u> - <u>$75.00</u></strong></p>
+								</div>
+								<div class="content-excerpt">
+									<p>Cras in nunc non ipsum duo cursus ultrices est</p>
+								</div>
+								<div class="rating">
+									<a class="active-color" href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+									<a class="active-color" href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+									<a class="active-color" href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+								</div>
+								<div class="compare-btn">
+									<a class="btn btn-primary btn-sm" href="#"><i class="fa fa-exchange" aria-hidden="true"></i> Add to compare</a>
+								</div>
+							</figcaption>
+						</figure>
+	    			</div>
+	    			<div class="col-12 col-md-12">
+						<figure class="figure product-box">
+							<div class="product-box-img">
+								<img  src="{% static 'blurb/img/product-img/product-img-5.jpg' %}" class="figure-img img-fluid" alt="Product Img">
+							</div>
+							<div class="quick-view-btn">
+								<div class="compare-btn">
+									<a class="btn btn-primary btn-sm" href="#"><i class="fa fa-eye" aria-hidden="true"></i> Quick view</a>
+								</div>
+							</div>
+							<figcaption class="figure-caption text-center">
+								<span class="badge badge-secondary wd-badge text-uppercase">New</span>
+								<div class="wishlist">
+									<i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div class="price-start">
+									<p>Price start from   <strong class="active-color"><u>$80.00</u> - <u>$75.00</u></strong></p>
+								</div>
+								<div class="content-excerpt">
+									<p>Cras in nunc non ipsum duo cursus ultrices est</p>
+								</div>
+								<div class="rating">
+									<a class="active-color" href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+									<a class="active-color" href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+									<a class="active-color" href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+								</div>
+								<div class="compare-btn">
+									<a class="btn btn-primary btn-sm" href="#"><i class="fa fa-exchange" aria-hidden="true"></i> Add to compare</a>
+								</div>
+							</figcaption>
+						</figure>
+	    			</div>
+				</div>
+			</div>
+    	</div>
+    </section>
+
+     <!-- =========================
+        Call To Action Section
+    ============================== -->
+
+
+    <!-- =========================
+        Details Section
+    ============================== -->
+    <section id="details">
+    	<div class="container">
+    		<div class="row wow fadeInLeft animated justify-content-center" data-wow-delay="600ms">
+    			<div class="col-10 col-sm-8 col-lg-3 details-box">
+    				<div class="row">
+    					<div class="col-sm-3 p0 text-center">
+    						<div class="details-img">
+    							<img class="img-fluid main-hover-icon-compare"  src="{% static 'blurb/img/details-img/compare-icon.png' %}" alt="compare-icon">
+    							<img class="img-fluid hover-icon-compare"  src="{% static 'blurb/img/details-img/compare.png' %}" alt="compare-icon">
+    						</div>
+    					</div>
+    					<div class="col-sm-9 p0 details-description">
+	    					<h6 class="details-title">Lets Compare</h6>
+	    					<p>Choose your product with price comparisons make your best deal today</p>
+    					</div>
+    				</div>
+					<div class="arow">
+						<img  src="{% static 'blurb/img/details-img/angle2.png' %}" alt="">
+					</div>
+    			</div>
+    			<div class="col-10 col-sm-8 col-lg-3 details-box">
+    				<div class="row">
+    					<div class="col-sm-3 p0 text-center">
+    						<div class="details-img">
+    							<img class="img-fluid main-hover-icon-user"  src="{% static 'blurb/img/details-img/review-icon.png' %}" alt="review-icon">
+    							<img class="img-fluid hover-icon-user"  src="{% static 'blurb/img/details-img/user-2.png' %}" alt="review-icon">
+	    					</div>
+    					</div>
+    					<div class="col-sm-9 p0 details-description">
+	    					<h6 class="details-title">Take Review</h6>
+	    					<p>Take your selected product review choose best one</p>
+    					</div>
+    				</div>
+					<div class="arow">
+						<img  src="{% static 'blurb/img/details-img/angle2.png' %}" alt="">
+					</div>
+    			</div>
+    			<div class="col-10 col-sm-8 col-lg-3 details-box">
+    				<div class="row">
+    					<div class="col-sm-3 p0 text-center">
+    						<div class="details-img">
+    							<img class="img-fluid main-hover-icon-vendor"  src="{% static 'blurb/img/details-img/shop.png' %}" alt="vendor-icon">
+    							<img class="img-fluid hover-icon-vendor"  src="{% static 'blurb/img/details-img/vendor-icon.png' %}" alt="vendor-icon">
+	    					</div>
+    					</div>
+    					<div class="col-sm-9 p0 details-description">
+	    					<h6 class="details-title">Choose Multi-Vendor Store</h6>
+	    					<p>Lets check your product from multivendor store get satisfy.</p>
+    					</div>
+    				</div>
+					<div class="arow">
+						<img  src="{% static 'blurb/img/details-img/angle2.png' %}" alt="">
+					</div>
+    			</div>
+    			<div class="col-10 col-sm-8 col-lg-3 details-box details-active">
+    				<div class="text-center">
+    					<img class="img-fluid"  src="{% static 'blurb/img/details-img/gift-icon.png' %}" alt="gift-icon">
+    					<h3 class="details-active-title">Enjoy Result</h3>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <!-- =========================
+        Subscribe Section
+    ============================== -->
+    <section id="subscribe">
+    	<div class="container">
+    		<!-- <div class="col-md-1"></div> -->
+            <div class="row subscribe-body">
+                <div class="col-12 col-md-12 col-lg-5">
+                    <h4 class="subscribe-title">Sign up for the latest updates</h4>
+                </div>
+                <div class="col-12 col-md-9 col-lg-5">
+                    <div class="input-group">
+                      <input type="text" class="form-control" aria-label="Text input with segmented button dropdown">
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-lg-2">
+                    <button type="button" class="btn btn-primary wd-shop-btn subscribe-btn">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+    	</div>
+    </section>
+
+    <!-- =========================
+        Footer Section
+    ============================== -->
+    {% include 'blurb/footer.html' %}
+
+    <!-- =========================
+    	Main Loding JS Script
+    ============================== -->
+    <script src="{% static 'blurb/js/jquery.min.js' %}"></script>
+    <script src="{% static 'blurb/js/jquery-ui.js' %}"></script>
+    <script src="{% static 'blurb/js/popper.js' %}"></script>
+    <script src="{% static 'blurb/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'blurb/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'blurb/js/jquery.nav.js' %}"></script>
+    <!-- <script src="js/jquery.nicescroll.js"></script> -->
+    <script src="{% static 'blurb/js/jquery.rateyo.js' %}"></script>
+    <script src="{% static 'blurb/js/jquery.scrollUp.min.js' %}"></script>
+    <script src="{% static 'blurb/js/jquery.sticky.js' %}"></script>
+    <script src="{% static 'blurb/js/mobile.js' %}"></script>
+    <script src="{% static 'blurb/js/lightslider.min.js' %}"></script>
+    <script src="{% static 'blurb/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'blurb/js/circle-progress.min.js' %}"></script>
+    <script src="{% static 'blurb/js/waypoints.min.js' %}"></script>
+
+    <script src="{% static 'blurb/js/simplePlayer.js' %}"></script>
+    
+    <script src="{% static 'blurb/js/main.js' %}"></script>
+  </body>
+
+<!-- Mirrored from www.themeim.com/demo/blurb/demo/wishlist.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 26 Nov 2023 22:43:48 GMT -->
+</html>
