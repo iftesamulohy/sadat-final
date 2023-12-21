@@ -139,7 +139,7 @@ STATICFILES_DIRS = [
 
 CORS_ALLOW_ALL_ORIGINS = True
 
-OPENAI_API_KEY = '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'  # Replace with your actual API key
+OPENAI_API_KEY = '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'  # Replace with your actual API key
 
 openai.api_key = OPENAI_API_KEY
 
